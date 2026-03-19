@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Kotlin test.kt",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "TestKt",
+      "classPaths": [
+        "${workspaceFolder}\\안드로이드\\out"
+      ],
+      "cwd": "${workspaceFolder}\\안드로이드",
+      "preLaunchTask": "Kotlin: Compile test.kt for Debug",
+      "console": "integratedTerminal"
+    }
+  ]
+}

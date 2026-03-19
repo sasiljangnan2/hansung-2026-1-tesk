@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Kotlin: Compile test.kt for Debug",
+			"type": "shell",
+			"command": "$kotlinc = Join-Path $env:LOCALAPPDATA 'Kotlin\\tools\\kotlinc\\bin\\kotlinc.bat'; $outDir = \"${workspaceFolder}\\안드로이드\\out\"; New-Item -ItemType Directory -Force -Path $outDir | Out-Null; & $kotlinc \"${workspaceFolder}\\안드로이드\\test.kt\" -d $outDir",
+			"group": "build"
+		},
+		{
+			"label": "Kotlin: Build and Run test.kt",
+			"type": "shell",
+			"command": "$kotlinc = Join-Path $env:LOCALAPPDATA 'Kotlin\\tools\\kotlinc\\bin\\kotlinc.bat'; & $kotlinc \"${workspaceFolder}\\안드로이드\\test.kt\" -include-runtime -d \"${workspaceFolder}\\안드로이드\\test.jar\"; java -jar \"${workspaceFolder}\\안드로이드\\test.jar\"",
+			"group": "build"
+		}
+	]
+}
