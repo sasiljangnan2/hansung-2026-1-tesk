@@ -1,2 +1,2 @@
 과제해야한다
-![에마시계](images/images.jpg)
+<img src="images/images.jpg" alt="에마시계" width="420" />
