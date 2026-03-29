@@ -1,11 +1,20 @@
-import numpy as np
-a = [5, 7, 9]
-b = [16, 21 , 24]
-x=np.array(a)
-y=np.array(b)
-mx = np.mean(x)
-my = np.mean(y)
-print("x의 평균:", mx)
-print("y의 평균:", my)
-print(x + y)
-print(x.__add__(y))
+import pandas as pd
+
+df = pd.read_csv("데이터마이닝/학생건강검사.csv", encoding='cp949')
+
+# DataFrame을 리스트로 변환
+a = df.values.tolist()
+
+print(a[0])  # 0행 데이터 확인
+print(a[1])  # 1행 데이터 확인
+print(a[2])  # 2행 데이터 확인
+
+print("총 행의 수는", len(a))
+
+count=0
+for i in range(len(a)):
+    if a[i][1] == '초':
+        count+=1
+
+print("초등학생의 총 인원수는", count)
+
