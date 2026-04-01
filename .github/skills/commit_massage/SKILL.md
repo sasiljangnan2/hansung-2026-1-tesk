@@ -1,4 +1,13 @@
-# Commit Message Generator
+---
+name: commit-message
+description: |
+  Git 커밋 메시지를 Conventional Commits 형식으로 생성합니다.
+  다음과 같은 상황에서 반드시 이 Skill을 사용하세요:
+  - "커밋 메시지 만들어줘", "commit message 작성해줘"
+  - "이 변경사항으로 커밋해줘", "git commit 메시지"
+  - git diff 결과를 붙여넣고 메시지 요청 시
+---
+## Commit Message Generator
 
 Conventional Commits 형식의 Git 커밋 메시지를 생성합니다.
 일관성 있는 커밋 히스토리는 코드 리뷰와 이슈 추적을 쉽게 해줍니다.
