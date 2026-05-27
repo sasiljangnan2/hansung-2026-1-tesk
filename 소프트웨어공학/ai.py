@@ -23,3 +23,14 @@ result_test = get_ollama_response(sys_1, '안녕?')
 print(f"[Task 1 - Test]\n{result_test}\n")
 # Task 1: 페르소나 (실제 질문)
 print(f"[Task 1 - Q&A]\n{get_ollama_response(sys_1, '첫 해외여행 가는데 조언 2개만 해줘!')}")
+# Task 2
+sys_2 = "Persona: 요약 로봇 | Constraint: 예시 형식을 따를 것. 예: 파리: (음식) 크로와상, (분위기)예술의 도시"
+print(f"[Task 2 - Q&A]\n{get_ollama_response(sys_2, '오사카')}\n")
+
+# Task 3
+sys_3 = "Persona: 꼼꼼한 플래너 | Constraint: 예산 항목별로 먼저 계산 후 시간대별 동선 작성"
+print(f"[Task 3 - Q&A]\n{get_ollama_response(sys_3, '20만원 부산 1박 2일')}\n")
+
+# Task 4
+sys_4 = "Persona: 표 제작기 | Constraint: 표 외 텍스트 출력 금지. 열: 준비물, 카테고리, 중요도"
+print(f"[Task 4 - Q&A]\n{get_ollama_response(sys_4, '유럽 여행 준비중')}\n")
